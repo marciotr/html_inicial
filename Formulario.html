@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta lang="pt-br" />
+    <title>Formulário</title>
+
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .icon-bar {
+            width: 100%;
+            background-color: #333333;
+            overflow: auto;
+        }
+
+        .icon-bar a {
+            float: left;
+            width: max-content;
+            text-align: center;
+            padding: 18px 12px;
+            transition: all 0.5s ease;
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+        }
+
+        .icon-bar a:hover {
+            background-color: #000;
+        }
+
+        .active {
+            background-color: #21aed1;
+        }
+    </style>
+
+</head>
+
+<body background="minimalista.jpg">
+
+    <div class="icon-bar">
+        <a href="index.html">HOME</a>
+        <a href="alinhamento.html">Alinhamento</a>
+        <a href="background.html">Background</a>
+        <a href="listas.html">Listas</a>
+        <a href="Acrostico.html">Acróstico</a>
+        <a class="active" href="Formulario.html">Formulário</a>
+    </div>
+
+    <h1 align="center">Formulário Pessoal</h1><br/><br/>
+
+    <form name="Forms" method="POST">
+        <p><strong>prencha com seus dados e envie o formulário.</strong></p>
+        <fieldset class="nome">
+            <input type="text" id="N" placeholder="Nome:" required><br/>
+            <input type="text" id="SN" placeholder="Sobrenome:" required><br/>
+        </fieldset>
+        <fieldset class="email">
+            <input type="email" id="contato" placeholder="E-mail:" size="25" required>
+        </fieldset>
+        <p>selecione seu gênero:</p>
+        <fieldset>
+            <input type="radio" id="M">
+            <label for="M">Masculino</label>
+            <input type="radio" id="F">
+            <label for="F">Feminino</label>
+            <input type="radio" id="Otrs">
+            <label for="Otrs">Outros</label>
+        </fieldset>
+        <p>data de nascimento:</p>
+        <fieldset>
+            <input type="date" id="birth">
+        </fieldset>
+        <p>selecione nas opções abaixo os seus passatempos favoritos:</p>
+        <fieldset>
+            <input type="checkbox" id="games">
+            <label for="games">jogar</label>
+            <input type="checkbox" id="livros">
+            <label for="livros">lêr livros</label>
+            <input type="checkbox" id="FS">
+            <label for="FS">filmes/series</label>
+            <input type="checkbox" id="musica">
+            <label for="musica">tocar algum instrumento</label>
+            <input type="checkbox" id="esportes">
+            <label for="esportes">praticar esportes</label>
+            <input type="checkbox" id="estudo">
+            <label for="estudo">estudar</label>
+            <input type="checkbox" id="pescaria">
+            <label for="pescaria">pescar</label>
+            <input type="checkbox" id="fisico">
+            <label for="fisico">exércio físico</label>
+        </fieldset>
+        <br/><br/>
+            <input type="submit" value="Enviar dados">
+            <input type="reset" value="Redefinir dados">
+    </form>
+
+</body>
+</html>
